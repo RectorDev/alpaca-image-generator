@@ -1,8 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import * as parts from "../assets/alpaca";
 import Button from "./Button.jsx";
 import nose from "../assets/alpaca/nose.png";
+import html2canvas from "html2canvas";
 const Alpaca = () => {
+  const divRef = useRef();
+
+  const downloadImage = async () => {
+    const element = divRef.current;
+    if (element) {
+      // Capture the div as a canvas
+      const canvas = await html2canvas(element);
+      const dataUrl = canvas.toDataURL("image/jpeg", 1.0); // Convert canvas to JPEG image
+
+      // Create a link and trigger the download
+      const link = document.createElement("a");
+      link.href = dataUrl;
+      link.download = "div-image.jpeg";
+      link.click();
+    }
+  };
+
   const [tab, setTab] = useState();
   const [backgroundShow, setBackgroundShow] = useState(
     parts.backgrounds[0].source
@@ -16,12 +34,13 @@ const Alpaca = () => {
   const [mouthShow, setMouthShow] = useState(parts.mouths[1].source);
   const [hairShow, setHairShow] = useState(parts.hairs[1].source);
   const [eyeShow, setEyeShow] = useState(parts.eyes[1].source);
-  const handleTab = () => {};
+
   console.log();
 
   return (
-    <div className="flex items-center justify-center gap-10 h-fit max-lg:flex-col">
-      <div className="relative flex w-fit h-fit">
+    <div className="relative flex items-center justify-center gap-10 h-fit max-lg:flex-col">
+      <div className="absolute z-30 left-2 top-2" ><Button click={downloadImage} text={"download"} /></div>
+      <div ref={divRef} className="relative flex w-fit h-fit">
         <img src={backgroundShow} className="-z-10 " alt="background" />
         <img src={eyeShow} className="absolute z-20" alt="ears" />
         <img src={accessorieShow} className="absolute z-10" alt="" />
