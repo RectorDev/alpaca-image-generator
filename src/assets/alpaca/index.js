@@ -68,78 +68,81 @@ import glasses from "../alpaca/accessories/glasses.png";
 import headphone from "../alpaca/accessories/headphone.png";
 
 export const accessories = [
-    { source: earing, title: "earing" },
-    { source: flower, title: "flower" },
-    { source: glasses, title: "glasses" },
-    { source: headphone, title: "headphone" },
-  ];
-  
-  export const backgrounds = [
-    { source: blue50, title: "blue50" },
-    { source: blue60, title: "blue60" },
-    { source: blue70, title: "blue70" },
-    { source: darkblue30, title: "darkblue30" },
-    { source: darkblue50, title: "darkblue50" },
-    { source: darkblue70, title: "darkblue70" },
-    { source: green50, title: "green50" },
-    { source: green60, title: "green60" },
-    { source: green70, title: "green70" },
-    { source: grey40, title: "grey40" },
-    { source: grey70, title: "grey70" },
-    { source: red50, title: "red50" },
-    { source: red60, title: "red60" },
-    { source: red70, title: "red70" },
-    { source: yellow50, title: "yellow50" },
-    { source: yellow60, title: "yellow60" },
-    { source: yellow70, title: "yellow70" },
-  ];
-  
-  export const ears = [
-    { source: defaultEar, title: "default" },
-    { source: tiltBackwardEar, title: "tilt-backward" },
-    { source: tiltForwardEar, title: "tilt-forward" },
-  ];
-  
-  export const eyes = [
-    { source: angryEyes, title: "angry" },
-    { source: defaultEyes, title: "default" },
-    { source: naughtyEyes, title: "naughty" },
-    { source: pandaEyes, title: "panda" },
-    { source: smartEyes, title: "smart" },
-    { source: starEyes, title: "star" },
-  ];
-  
-  export const hairs = [
-    { source: bangHair, title: "bang" },
-    { source: curlsHair, title: "curls" },
-    { source: defaultHair, title: "default" },
-    { source: elegantHair, title: "elegant" },
-    { source: fancyHair, title: "fancy" },
-    { source: quiffHair, title: "quiff" },
-    { source: shortHair, title: "short" },
-  ];
-  
-  export const legs = [
-    { source: bubbleTeaLeg, title: "bubble-tea" },
-    { source: cookieLeg, title: "cookie" },
-    { source: defaultLeg, title: "default" },
-    { source: gameConsoleLeg, title: "game-console" },
-    { source: tiltBackwardLeg, title: "tilt-backward" },
-    { source: tiltForwardLeg, title: "tilt-forward" },
-  ];
-  
-  export const mouths = [
-    { source: astonishedMouth, title: "astonished" },
-    { source: defaultMouth, title: "default" },
-    { source: eatingMouth, title: "eating" },
-    { source: laughMouth, title: "laugh" },
-    { source: tongueMouth, title: "tongue" },
-  ];
-  
-  export const necks = [
-    { source: bendBackwardNeck, title: "bend-backward" },
-    { source: bendForwardNeck, title: "bend-forward" },
-    { source: defaultNeck, title: "default" },
-    { source: thickNeck, title: "thick" },
-  ];
-  
+  { source: earing, title: "earing" },
+  { source: flower, title: "flower" },
+  { source: glasses, title: "glasses" },
+  { source: headphone, title: "headphone" },
+];
+
+export const backgrounds = [
+  { source: blue50, title: "blue 1" },
+  { source: blue60, title: "blue 2" },
+  { source: blue70, title: "blue 3" },
+  { source: darkblue30, title: "darkblue 1" },
+  { source: darkblue50, title: "darkblue 2" },
+  { source: darkblue70, title: "darkblue 3" },
+  { source: green50, title: "green 1" },
+  { source: green60, title: "green 2" },
+  { source: green70, title: "green 3" },
+  { source: grey40, title: "grey 1" },
+  { source: grey70, title: "grey 2" },
+  { source: grey80, title: "grey 3" },
+  { source: red50, title: "red 1" },
+  { source: red60, title: "red 2" },
+  { source: red70, title: "red 3" },
+  { source: yellow50, title: "yellow 1" },
+  { source: yellow60, title: "yellow 2" },
+  { source: yellow70, title: "yellow 3" },
+];
+
+export const ears = [
+  { source: tiltBackwardEar, title: "tilt-backward" },
+  { source: defaultEar, title: "default" },
+  { source: tiltForwardEar, title: "tilt-forward" },
+];
+
+export const eyes = [
+  { source: angryEyes, title: "angry" },
+  { source: defaultEyes, title: "default" },
+  { source: naughtyEyes, title: "naughty" },
+  { source: pandaEyes, title: "panda" },
+  { source: smartEyes, title: "smart" },
+  { source: starEyes, title: "star" },
+];
+
+export const hairs = [
+  { source: bangHair, title: "bang" },
+  { source: defaultHair, title: "default" },
+  { source: curlsHair, title: "curls" },
+
+  { source: elegantHair, title: "elegant" },
+  { source: fancyHair, title: "fancy" },
+  { source: quiffHair, title: "quiff" },
+  { source: shortHair, title: "short" },
+];
+
+export const legs = [
+  { source: bubbleTeaLeg, title: "bubble-tea" },
+  { source: defaultLeg, title: "default" },
+  { source: cookieLeg, title: "cookie" },
+
+  { source: gameConsoleLeg, title: "game-console" },
+  { source: tiltBackwardLeg, title: "tilt-backward" },
+  { source: tiltForwardLeg, title: "tilt-forward" },
+];
+
+export const mouths = [
+  { source: astonishedMouth, title: "astonished" },
+  { source: defaultMouth, title: "default" },
+  { source: eatingMouth, title: "eating" },
+  { source: laughMouth, title: "laugh" },
+  { source: tongueMouth, title: "tongue" },
+];
+
+export const necks = [
+  { source: bendBackwardNeck, title: "bend-backward" },
+  { source: defaultNeck, title: "default" },
+  { source: bendForwardNeck, title: "bend-forward" },
+
+  { source: thickNeck, title: "thick" },
+];
