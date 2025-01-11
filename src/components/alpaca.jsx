@@ -9,7 +9,7 @@ import {
   mouths,
   hairs,
 } from "../assets/alpaca";
-import Button from "./button";
+import Button from "./Button.jsx";
 
 const Alpaca = () => {
   const tabs = [
